@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="sevenindex.Views.onboarding.MyPage_lung">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <BoxView
+                HeightRequest="40"
+                />
+            <Label
+                Text="المرجو إختيار اللغة"
+                TextColor="Black"
+                x:Name="txtlang"
+                FontAttributes="Bold"
+                FontSize="36"
+                HorizontalOptions="CenterAndExpand"
+                />
+            <BoxView
+                HeightRequest="20"
+                />
+            <Frame WidthRequest="250" x:Name="frmarabe" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="morocco.png"/>
+                    <Label Text="العربية" x:Name="arabetxt" FontAttributes="Bold" FontSize="23" TextColor="Black" />
+                </StackLayout>
+            </Frame>
+
+            <Frame WidthRequest="250" x:Name="frmfrance" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="france.png"/>
+                    <Label Text="الفرنسية" x:Name="francetxt" FontAttributes="Bold" FontSize="23" TextColor="Black" />
+                </StackLayout>
+            </Frame>
+            <Button
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                Text="التالي"
+                x:Name="btnsuivant"
+                BackgroundColor="#3A4FA7"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="20"
+                Margin="0,0,10,20"
+                WidthRequest="170"
+                />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

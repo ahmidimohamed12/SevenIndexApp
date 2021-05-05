@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cal="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
+    x:Class="sevenindex.Views.menu.MyPage_adddate">
+    <ContentPage.Content>
+        <StackLayout>
+           <cal:Calendar
+        Month="5"
+        Year="2019"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="sevenindex.Views.Profile.MyPage_profile">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                Source="headd.png"
+                HorizontalOptions="FillAndExpand"
+
+                />
+
+         
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <Frame x:Name="frm1" Grid.Column="1" Grid.Row="0" >
+                    <StackLayout>
+                        <Image Source="uss.png" />
+                        <Label FontAttributes="Bold"  TextColor="Black" x:Name="txtprofile" />
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="frm2" Grid.Column="3" Grid.Row="0">
+                    <StackLayout>
+                        <Image Source="insurance.png"/>
+                        <Label FontAttributes="Bold" TextColor="Black" x:Name="txtcond" />
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="frm3" Grid.Column="5" Grid.Row="0">
+                    <StackLayout>
+                        <Image Source="remove.png" />
+                        <Label FontAttributes="Bold" TextColor="Black" x:Name="txtdeconecter" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
